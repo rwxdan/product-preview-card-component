@@ -1,6 +1,6 @@
 # Frontend Mentor - Product preview card component solution
 
-- ## Desktop preview:
+- ### Desktop preview:
   ![](./design/desktop-preview.png)
-- ## Mobile preview:
+- ### Mobile preview:
   ![](./design/mobile-preview.png)

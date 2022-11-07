@@ -189,6 +189,10 @@ a:visited {
 		--fs-footer: 0.75rem;
 	}
 
+	h1 {
+		line-height: 1.2;
+	}
+
 	.preview {
 		letter-spacing: 0.375rem;
 	}

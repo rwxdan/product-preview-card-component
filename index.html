@@ -3,79 +3,69 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
+			href="./assets/img/favicon-32x32.png"
 		/>
-
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+			rel="stylesheet"
 		/>
 		<script
 			src="https://kit.fontawesome.com/9201bb4f71.js"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
 		<title>Product preview card component</title>
-
-		<style>
-			.attribution {
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<main>
-			<div class="card">
+			<div class="container">
 				<picture>
 					<source
-						media="(max-width: 480px)"
-						srcset="./images/image-product-mobile.jpg"
+						media="(min-width: 650px)"
+						srcset="./assets/img/image-product-desktop.jpg"
 					/>
 					<source
-						media="(min-width: 600px)"
-						srcset="./images/image-product-desktop.jpg"
+						media="(min-width: 320px)"
+						srcset="./assets/img/image-product-mobile.jpg"
 					/>
-					<img
-						src="./images/image-product-desktop.jpg"
-						alt="Gabrielle perfume"
-					/>
+					<img src="./assets/img/image-product-mobile.jpg" alt="Product" />
 				</picture>
 				<div class="content">
 					<p class="preview">PERFUME</p>
 					<h1>Gabrielle Essence Eau De Parfum</h1>
-					<p class="ctx">
+
+					<p class="description">
 						A floral, solar and voluptuous interpretation composed by Olivier
 						Polge, Perfumer-Creator for the House of CHANEL.
 					</p>
+
 					<div class="price">
-						<p>$149.99</p>
-						<p>$169.99</p>
+						<p class="big-tag">$149.99</p>
+						<p class="small-tag">$169.99</p>
 					</div>
-					<button class="cta">
-						<i class="fa fa-cart-shopping"></i>&nbsp;&nbsp;Add to Cart
+					<button aria-label="button" class="cta">
+						<img
+							src="./assets/img/icon-cart.svg"
+							alt="Cart icon"
+						/>&nbsp;&nbsp;Add to Cart
 					</button>
 				</div>
 			</div>
+			<footer>
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by
+				<a href="https://github.com/rwxdan"
+					><i class="fa-brands fa-github"></i>&nbsp;Daniel Castro</a
+				>.
+			</footer>
 		</main>
-		<footer class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by
-			<a href="https://github.com/rwxdan/"
-				><i class="fa fa-github"></i> Daniel Castro</a
-			>.
-		</footer>
 	</body>
 </html>
